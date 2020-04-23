@@ -1,0 +1,42 @@
+body {
+    background-color: rgba(226, 247, 37, 0.568);
+    font-family: fantasy;
+    font-style: oblique;
+
+}
+h1 {
+
+    text-align: center;
+    color: black;
+}
+h2 {
+    width: 95%;
+    margin: auto;
+}
+ul {
+    background-color: rgba(37, 226, 247, 0.99);
+    color: white;   
+    column-width: auto;
+    font-size: larger;
+    width: 25%;
+    border-radius: 25px;
+    padding-top: 20px;
+}
+.container {
+    width: 80%;
+    margin: auto;
+    border: 1px solid black;
+    
+}
+
+#list {
+    display: flex;
+    justify-content: space-around;
+}
+#textbox {
+    width: 95%;
+    margin: auto;
+}
+input[type=text]{
+    font-size: large;
+}
