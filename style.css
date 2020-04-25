@@ -1,6 +1,6 @@
 body {
     background-color: rgba(226, 247, 37, 0.568);
-    font-family: fantasy;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-style: oblique;
 
 }
@@ -8,19 +8,51 @@ h1 {
 
     text-align: center;
     color: black;
+    
 }
 h2 {
     width: 95%;
     margin: auto;
 }
-ul {
+.listtitle {
     background-color: rgba(37, 226, 247, 0.99);
     color: white;   
     column-width: auto;
-    font-size: larger;
-    width: 25%;
-    border-radius: 25px;
-    padding-top: 20px;
+    font-size: x-large;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    display: inline-block;
+    border: 1px solid black;
+    cursor: pointer;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    
+  }
+.show {
+    display: block;
+}
+.result{
+    display: inline-block;
+
+}
+
+#resultwrapper {
+    justify-content: space-around;
+    display: flex;
+}
+li {
+    list-style-type: none; 
+    font-size: large;
+    padding: 2px;
+    cursor: pointer;   
 }
 .container {
     width: 80%;

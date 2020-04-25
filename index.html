@@ -4,42 +4,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <script src=""></script>
+    <script src="main.js"></script>
     <title>What's in your fridge?</title>
 </head>
 <body>
-    <div class = container>
+    <div class = "container">
         <h1>Tell me what's in your fridge - I will tell you what to cook!</h1>
         <h2>Choose from the list</h2>
         <div id = "list">
-        <ul id = "meat">Meat and Fish
-            <li>Beef</li>
-            <li>Chicken</li>
-            <li>Fish</li>
-            <li>Lamb</li>
-            <li>Pork</li>
-            <li>Veal</li>
+        <ul><div  id = "meat" onclick="dropdown(1)" class = "listtitle">Meat and Fish</div>
+            <div id = "dropdown1" class="dropdown-content">
+            <li onclick="select('beef')">Beef</li>
+            <li onclick="select('chicken')">Chicken</li>
+            <li onclick="select('fish')">Fish</li>
+            <li onclick="select('lamb')">Lamb</li>
+            <li onclick="select('pork')">Pork</li>
+            <li onclick="select('veal')">Veal</li>
+            </div>
         </ul>
-        <ul id = "vegetables">Vegetables
-            <li>Broccoli</li>
-            <li>Carrots</li>
-            <li>Corn</li>
-            <li>Lettuce</li>
-            <li>Potatoes</li>
-            <li>Tomatoes</li>
-            <li>Salad</li>
+        <ul><div id = "vegetables" onclick="dropdown(2)" class="listtitle">Vegetables</div>
+            <div id = "dropdown2" class="dropdown-content">
+            <li onclick="select('broccoli')">Broccoli</li>
+            <li onclick="select('carrots')">Carrots</li>
+            <li onclick="select('corn')">Corn</li>
+            <li onclick="select('lettuce')">Lettuce</li>
+            <li onclick="select('potatoes')">Potatoes</li>
+            <li onclick="select('tomatoes')">Tomatoes</li>
+            <li onclick="select('salad')">Salad</li>
+            </div>
         </ul>
-        <ul id ="dairy">Dairy and Eggs
-            <li>Cheese</li>
-            <li>Milk</li>
-            <li>Yogurt</li>
-            <li>Eggs</li>
+        <ul><div id ="dairy" onclick="dropdown(3)" class = "listtitle">Dairy and Eggs</div>
+            <div id = "dropdown3" class="dropdown-content">
+            <li onclick="select('cheese')">Cheese</li>
+            <li onclick="select('milk')">Milk</li>
+            <li onclick="select('yogurt')">Yogurt</li>
+            <li onclick="select('eggs')">Eggs</li>
+            </div>
         </ul>
         </div>
         <h2>or type an ingredient here</h2>
         <div id = textbox>
-        <input type="text" id = "ingredient" size="25"> 
+        <input type="text" id = "ingText" size="25"> 
+        <input type="button" value="save" onclick="createIngredient()">
     </div>
+    <div id = "chosen"></div><input type="button" value="Show me what to cook" id="request" onclick="request()">
+    </div>
+    <div class="container" id="resultcontainer">
+        <h2>My Suggestions for you</h2>
+        <div id = "resultwrapper">
+            <div id="result1" class="result">
+                <h3>Coconut Curry</h3>
+                <img src = "https://spoonacular.com/recipeImages/654679-312x231.jpg" width=""></img>
+            </div>
+            <div id="result2" class="result">
+                <h3>Coconut Curry</h3>
+                <img src = "https://spoonacular.com/recipeImages/654679-312x231.jpg" width=""></img>
+            </div>
+            <div id="result3" class="result">
+                <h3>Coconut Curry</h3>
+                <img src = "https://spoonacular.com/recipeImages/654679-312x231.jpg" width=""></img>
+            </div>
+        </div>
     </div>
 </body>
 </html>
