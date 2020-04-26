@@ -45,24 +45,24 @@
         <h2>or type an ingredient here</h2>
         <div id = textbox>
         <input type="text" id = "ingText" size="25"> 
-        <input type="button" value="save" onclick="createIngredient()">
+        <input type="button" value="save" onclick="createIngredient()"><input type="button" value="Show me what to cook" id="request" onclick="request()">
     </div>
-    <div id = "chosen"></div><input type="button" value="Show me what to cook" id="request" onclick="request()">
+    <div id = "chosen"></div>
     </div>
     <div class="container" id="resultcontainer">
-        <h2>My Suggestions for you</h2>
+        <h2></h2>
         <div id = "resultwrapper">
             <div id="result1" class="result">
-                <h3>Coconut Curry</h3>
-                <img src = "https://spoonacular.com/recipeImages/654679-312x231.jpg" width=""></img>
+                <h3></h3>
+                <img id ="image1" src = "" width="300px"></img>
             </div>
             <div id="result2" class="result">
-                <h3>Coconut Curry</h3>
-                <img src = "https://spoonacular.com/recipeImages/654679-312x231.jpg" width=""></img>
+                <h3></h3>
+                <img id ="image2" src = "" width="300px"></img>
             </div>
             <div id="result3" class="result">
-                <h3>Coconut Curry</h3>
-                <img src = "https://spoonacular.com/recipeImages/654679-312x231.jpg" width=""></img>
+                <h3></h3>
+                <img id = "image3" src = "" width="300px"></img>
             </div>
         </div>
     </div>
